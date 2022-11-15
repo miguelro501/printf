@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:33:54 by miguelro          #+#    #+#             */
-/*   Updated: 2022/11/11 16:53:58 by miguelro         ###   ########.fr       */
+/*   Updated: 2022/11/15 15:32:57 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,3 @@ int	ft_printf(const char *format, ...)
 	va_end(arg);
 	return (count);
 }
-
-/* int main()
-{
-	ft_printf(" [%d", 7);
-} */

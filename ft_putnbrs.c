@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:18:55 by miguelro          #+#    #+#             */
-/*   Updated: 2022/11/15 14:55:10 by miguelro         ###   ########.fr       */
+/*   Updated: 2022/11/15 15:32:45 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ int	ft_putnbr_base(t_ull n, char *base, t_ull baselen, char c)
 	int	count;
 
 	count = 0;
-	/* if (c == 'p')
+	if (c == 'p')
 	{
 		if (!n)
 			return (ft_putstr("(nil)"));
 		count = ft_putstr("0x");
 		c = '0';
-	} */
+	}
 	if (n >= baselen)
 		count += ft_putnbr_base(n / baselen, base, baselen, c);
 	return (write(1, &base[n % baselen], 1) + count);
